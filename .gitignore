@@ -1,0 +1,95 @@
+# =======================================================
+# .gitignore for Streamlit Cloud Deployment
+# AI-Based Vehicle Parking Slot Detection System
+# =======================================================
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Bytecode and Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Datasets and Dataset Caches (Excludes ~1.1 GB of training data)
+train/
+valid/
+test/
+train.cache
+valid.cache
+data.yaml
+README.dataset.txt
+README.roboflow.txt
+
+# Training Results & Experiment Runs
+runs/
+training results/
+
+# PyInstaller / Desktop Executable Build Artifacts
+build/
+dist/
+dist_new/
+dist_v2/
+*.spec
+
+# Desktop App and Local Scripts (Not needed for Streamlit Web Cloud)
+desktop_app.py
+desktop_backup_app.py
+test_desktop_app.py
+run_app.py
+logo.ico
+logo.png
+
+# Local Training, Conversion, and Testing Utility Scripts
+train.py
+evaluate_model.py
+convert.py
+verify_mapping.py
+test_model.py
+tiled_test.py
+check_classes.py
+
+# Local Backup and Snapshot Files
+app_backup.py
+app_before_sms.py
+*.bak
+*.local_backup
+
+# Sample and Output Test Images
+class_test.jpg
+prediction.jpg
+tiled_result.jpg
+
+# Unused Alternative Model Checkpoints
+yolo11n.pt
+yolo11s.pt
+
+# Offline HTML / Saved Web Pages
+ai based vehicle parking slot _ Models_files/
+ai based vehicle parking slot _ Models.html
+
+# Secrets and Local Streamlit Configuration
+.env
+.env.*
+secrets.toml
+.streamlit/secrets.toml
+
+# Operating System Files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Explicitly ensure primary deployment files are NEVER ignored
+!weights.pt
+!app.py
+!requirements.txt
+!packages.txt
+!README.md
+!.gitattributes
+!.gitignore

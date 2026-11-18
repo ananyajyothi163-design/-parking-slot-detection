@@ -1,0 +1,10 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit
+rfdetr
+supervision
+opencv-python-headless
+numpy
+Pillow
+pandas
+torch
+torchvision
